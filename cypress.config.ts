@@ -3,7 +3,7 @@ const { getUser } = require("./cypress/utils/aws");
 
 module.exports = defineConfig({
   env: {
-    UAT_URL: "https://digital.uat.greatminds.dev"
+    UAT_URL: "x"
   },
   e2e: {
     setupNodeEvents(on, config) {
