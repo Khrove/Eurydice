@@ -1,4 +1,4 @@
-import { ModuleView } from "../pages/explore/module.view";
+import {ModuleView} from "../pages/explore/module.view";
 
 export class ModuleViewOperation {
     private moduleView: ModuleView;
@@ -7,11 +7,8 @@ export class ModuleViewOperation {
         this.moduleView = new ModuleView();
     }
 
-    public openModule(title: string | number) {
-        if (typeof title === 'number') {
-            this.moduleView.moduleCard.eq(title).click();
-        } else {
-            this.moduleView.moduleCard.contains(title).click();
-        }
+    public async selectAssessment(assessment: string) {
+        this.moduleView.assessmentsDropdown.click();
+        this.moduleView.assessmentsDropdownItem.click(assessment);
     }
 }
