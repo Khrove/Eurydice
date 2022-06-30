@@ -12,4 +12,8 @@ export abstract class BasePri {
     isPresent() {
         return this._element.should('be.present');
     }
+
+    triggerEvent() {
+        return this._element.trigger('focus');
+    }
 }

@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "test": "cypress run --spec 'cypress/e2e/spec.cy.ts' --headed"
+    "test": "cypress run --spec 'cypress/e2e/spec.cy.ts'"
   },
   "repository": {
     "type": "git",
