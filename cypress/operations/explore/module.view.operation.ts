@@ -1,4 +1,4 @@
-import { ModuleView } from "../pages/explore/module.view";
+import { ModuleView } from "../../pages/explore/module.view";
 
 export class ModuleViewOperation {
     private moduleView: ModuleView;
